@@ -4,7 +4,7 @@ class View{
     this.game = game;
     this.el = $el;
     this.setupTowers();
-    this.render();
+    // this.render();
     this.firstClick = undefined;
 
     $("ul").on("click", (e)=>{
@@ -29,7 +29,7 @@ class View{
       let $ul = $(`<ul data-pos='${i}'></ul>`);
       for(let j = 0; j < 3; j++){
         if(i === 0){
-          let $li = $(`<li id = "disk-${j}"></li>`);
+          let $li = $(`<li class="disk-${j}"></li>`);
           $ul.append($li);
         }
         else{
@@ -41,9 +41,20 @@ class View{
     }
   }
 
-  render(){
-
-  }
+  // render(){
+  //   let length = this.game.towers.length;
+  //   for(let i = 0; i < length; i++) {
+  //     let column = $(`<ul data-pos="${i}"></ul>`);
+  //     for (let j = 0; j< this.game.towers[i].length; j++) {
+  //       if (this.game.towers[i][j] !== undefined){
+  //         column.append($(`<li class="disk-${j}"></li>`));
+  //       } else {
+  //         column.append($('<li></li>'));
+  //       }
+  //     }
+  //     this.el.append(column);
+  //   }
+  // }
 }
 
 module.exports = View;

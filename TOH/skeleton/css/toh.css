@@ -27,21 +27,21 @@ h1{
   box-sizing: border-box;
 }
 
-#disk-0{
+.disk-0{
   height: 50px;
   background-color: blue;
   border-radius: 20px;
   width: 60px;
 }
 
-#disk-1{
+.disk-1{
   height: 50px;
   background-color: blue;
   border-radius: 20px;
   width: 120px;
 }
 
-#disk-2{
+.disk-2{
   height: 50px;
   background-color: blue;
   border-radius: 20px;
@@ -72,14 +72,3 @@ ul::after {
   height: 10px;
   width: 200px;
 }
-
-/*let length = this.game.towers.length;
-for(let i = 0; i < length; i++) {
-  let column = $(`<ul data-pos="${i}"></ul>`);
-  this.el.append(column);
-  for (let j = 0; j< this.game.towers[i].length; i++) {
-    if (this.game.towers[i][j] !== undefined){
-      column.append($(`<li class="disk-${j}"></li>`));
-    }
-  }
-}*/
